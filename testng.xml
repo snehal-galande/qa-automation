@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="TTA3xSeleniumFramework">
+
+        <classes>
+<!--            <class name="org.selenium.web.tests.LoginTest">-->
+<!--                <methods>-->
+
+
+<!--                    <include name="testVWOLogin_Positive"/>-->
+<!--                    <include name="testVWOLogin_Negative"/>-->
+<!--                    &lt;!&ndash;                    <include name="testLoginPositive"/>&ndash;&gt;-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="org.selenium.web.tests.TestingPageTest">-->
+<!--                <methods>-->
+<!--                    <include name="test_TestingPage"/>-->
+<!--                    <include name="test_ABPage"/>-->
+<!--                    <include name="test_MultivariatePage"/>-->
+<!--                    &lt;!&ndash;                    <include name="testLoginPositive"/>&ndash;&gt;-->
+<!--                </methods>-->
+<!--            </class>-->
+
+            <class name="org.selenium.web.tests.InsightsPageTest">
+                <methods>
+                    <include name="test_GoalsOptionPage"/>
+                    <include name="test_DashBoardOptionPage"/>
+                    <include name="test_FunnelsOptionPage"/>
+                    <include name="test_HeatmapsPage"/>
+                    <!--                    <include name="testLoginPositive"/>-->
+                </methods>
+            </class>
+
+            <class name="org.selenium.web.tests.DashBoardPageTest">
+                <methods>
+                    <include name="test_DashBoardPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
