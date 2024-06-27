@@ -25,6 +25,10 @@ public class DashboardPage extends BasePage {
           return new InsightsPage();
     }
 
+    public FullstackPage dashBoardToFullStack(){
+          return new FullstackPage();
+    }
+
     public String verifyCreateTestButton(){
           presenceOfElement(createTestButton);
           return getElement(createTestButton).getText();
